@@ -1,0 +1,32 @@
+     /* ===================== GOOGLE FONT ===================== */
+
+     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+
+
+     /* ===================== VARIABLE CSS ===================== */
+
+     :root {
+
+         --header-height: 3rem;
+
+         /* ----------- COLORS ----------- */
+         /* purple : 250 / green : 142 / blue:230 / pink:340 */
+         --hue-color: ;
+
+         /* HSL color mode */
+         --first-color: #6E57E0;
+         --first-color-second: ;
+         --first-color-alt: ;
+         --first-color-lighter: ;
+         --title-color: ;
+         --text-color: ;
+         --text-color-light: ;
+         --input-color: ;
+         --body-color: ;
+         --container-color: ;
+
+
+
+
+     }
