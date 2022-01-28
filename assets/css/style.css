@@ -8,55 +8,44 @@
 
      :root {
 
-         --header-height: 3rem;
+         --header-height: 3.5rem;
 
          /* ===================== COLORS  ===================== */
 
          /* purple : 250 / green : 142 / blue:230 / pink:340 */
-         --hue-color: 250;
+         --first-hue: 250;
+         --sat: 66%;
+         --lig: 75%;
+         --second-hue: 219;
 
          /* HSL color mode */
          /* hsl(색상,채도,명도,투명도) */
-         --first-color: hsl(var(--hue-color), 69%, 61%);
-         --first-color-second: hsl(var(--hue-color), 69%, 61%);
-         --first-color-alt: hsl(var(--hue-color), 57%, 53%);
-         --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
-         --title-color: hsl(var(--hue-color), 8%, 15%);
-         --text-color: hsl(var(--hue-color), 8%, 45%);
-         --text-color-light: hsl(var(--hue-color), 8%, 65%);
-         --input-color: hsl(var(--hue-color), 70%, 96%);
-         --body-color: hsl(var(--hue-color), 60%, 99%);
-         --container-color: #fff;
+         /* hsl(hue,saturation,lightness) */
+         --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
+         --first-color-alt: hsl(var(--first-hue), var(--sat), 71%);
+         --title-color: hsl(var(--second-hue), 15%, 95%);
+         --text-color: hsl(var(--second-hue), 8%, 75%);
+         --text-color-light: hsl(var(--second-hue), 4%, 55%);
+         --body-color: hsl(var(--second-hue), 48%, 8%);
+         --container-color: hsl(var(--second-hue), 32%, 12%);
 
          /* ===================== FONT & TYPOGRAPHY ===================== */
          --body-font: 'Noto Sans KR', sans-serif;
 
-         /* ===================== FONT SIZE ===================== */
-
          /* 1rem = 16px */
-         --big-font-size: 2rem;
+         --biggest-font-size: 2rem;
          --h1-font-size: 1.5rem;
          --h2-font-size: 1.25rem;
          --h3-font-size: 1.125rem;
          --normal-font-size: 0.938rem;
          --small-font-size: 0.813rem;
          --smaller-font-size: 0.75rem;
+         --tiny-font-size: 0.625rem;
 
          /* ===================== FONT WEIGHT ===================== */
          --font-medium: 500;
          --font-semi-bold: 600;
-         --font-bold: 900;
-
-
-         /* ===================== MARGIN BOTTOM ===================== */
-         --mb-0-25: 0.25rem;
-         --mb-0-5: 0.5rem;
-         --mb-0-75: 0.75rem;
-         --mb-1: 1rem;
-         --mb-1-5: 1.5rem;
-         --mb-2: 2rem;
-         --mb-2-5: 2.5rem;
-         --mb-3: 3rem;
+         --font-bold: 800;
 
          /* ===================== Z-INDEX ===================== */
          --z-tooltip: 10;
@@ -64,11 +53,11 @@
          --z-modal: 1000;
      }
 
-     /* ===================== DESK-TOP  ===================== */
+     /* ===================== DESK-TOP (responsive) ===================== */
 
      @media screen and (min-width:968px) {
          :root {
-             --big-font-size: 3rem;
+             --biggest-font-size: 3rem;
              --h1-font-size: 2.25rem;
              --h2-font-size: 1.5rem;
              --h3-font-size: 1.25rem;
@@ -79,8 +68,6 @@
      }
 
      /* ===================== // DESK-TOP  ===================== */
-
-     /* ===================== DARK MODE  ===================== */
 
 
      /* ===================== BUTTON  ===================== */
@@ -96,12 +83,60 @@
          scroll-behavior: smooth;
      }
 
-     body {
-         margin: 0 0 var(--header-height) 0;
+     body,
+     button,
+     input,
+     textarea {
          font-family: var(--body-font);
+         font-size: var(--normal-font-size);
      }
 
+     body {
+         background-color: var(--body-color);
+         color: var(--text-color);
+     }
+
+     h1,
+     h2,
+     h3 {
+         color: var(--title-color);
+         font-weight: var(--font-semi-bold);
+     }
+
+     ul {
+         list-style: none;
+     }
+
+     a {
+         text-decoration: none;
+     }
+
+     button {
+         cursor: pointer;
+         border: none;
+         outline: none;
+     }
+
+     img {
+         max-width: 100%;
+         height: auto;
+     }
+
+     /* ===================== 다크모드  ===================== */
+
+
+
      /* ===================== 재사용 CSS CLASS  ===================== */
+
+     .container {
+         max-width: 968px;
+         margin: 0 1rem;
+     }
+
+     .grid {
+         display: grid;
+         gap: 1.25rem;
+     }
 
      /* ===================== LAYOUT ===================== */
 
