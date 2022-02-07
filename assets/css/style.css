@@ -264,9 +264,16 @@
 
      .home__handle {
          justify-self: center;
-         width: 210px;
+         width: 215px;
          height: 270px;
-         background:linear-gradient()
+         background: linear-gradient(180deg,
+                 hsla(var(--first-hue), var(--sat), var(--lig), 1),
+                 hsla(var(--first-hue), var(--sat), var(--lig), 0.2));
+         border-radius: 10rem 10rem 1rem 1rem;
+         display: flex;
+         /* align-items: flex-end; */
+         justify-content: end;
+         overflow: hidden;
      }
 
      /* ===================== BUTTONS ===================== */
