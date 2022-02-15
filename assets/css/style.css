@@ -482,6 +482,21 @@
 
      .services__title {
          font-size: var(--h3-font-size);
+         margin-bottom: 2.5rem;
+     }
+
+     .services__button {
+         color: var(--first-color);
+         font-size: var(--small-font-size);
+         display: flex;
+         align-items: center;
+         column-gap: 0.25rem;
+         cursor: pointer;
+     }
+
+     /* .services__button :hover 할 때 .services__icon에 효과를 주는 것. */
+     .services__button:hover .services__icon {
+         transform: translateX(0.25rem)
      }
 
      /* ===================== SHOW MENU ===================== */
