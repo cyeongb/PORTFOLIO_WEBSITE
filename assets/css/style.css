@@ -499,6 +499,11 @@
          transform: translateX(0.25rem)
      }
 
+     .services__icon {
+         font-size: 1rem;
+         transition: 0.4s;
+     }
+
      /* ===================== SHOW MENU ===================== */
 
      /* ===================== ACTIVE LINK ===================== */
