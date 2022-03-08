@@ -504,6 +504,20 @@
          transition: 0.4s;
      }
 
+     /* Services Modal */
+     .services__modal {
+         position: fixed;
+         inset: 0;
+         background-color: hsla(var(--second-hue), 28%, 16%, 0.7);
+         padding: 2rem 1rem;
+         display: grid;
+         place-items: center;
+         /* visibility: hidden; */
+         /* opacity: 0; */
+         transition: 0.4s;
+         z-index: var(--z-modal);
+     }
+
      /* ===================== SHOW MENU ===================== */
 
      /* ===================== ACTIVE LINK ===================== */
