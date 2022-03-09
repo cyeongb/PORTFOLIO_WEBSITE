@@ -512,8 +512,8 @@
          padding: 2rem 1rem;
          display: grid;
          place-items: center;
-         /* visibility: hidden; */
-         /* opacity: 0; */
+         visibility: hidden;
+         opacity: 0;
          transition: 0.4s;
          z-index: var(--z-modal);
      }
@@ -559,6 +559,15 @@
 
      .services__modal-info {
          font-size: var(--small-font-size);
+     }
+
+     .services__modal-close {
+         position: absolute;
+         top: 1.5rem;
+         right: 1.5rem;
+         font-size: 1.5rem;
+         color: var(--first-color);
+         cursor: pointer;
      }
 
      /* ===================== SHOW MENU ===================== */
