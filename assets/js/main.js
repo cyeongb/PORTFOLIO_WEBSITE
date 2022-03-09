@@ -14,7 +14,22 @@ function scrollHeader() {
 }
 window.addEventListener("scroll", scrollHeader);
 
-/* ===================== Service Modal ===================== */
+/* ===================== Services Modal ===================== */
+
+const modalViews = document.querySelectorAll(".services__modal"); //모달창
+const modalBtns = document.querySelectorAll(".services__button"); // 더보기 버튼
+const modalClose = document.querySelectorAll(".services__modal-close"); // 모달창 닫기
+
+let modal = function (modalClick) {
+  console.log("modalClick : ", modalClick);
+  modalViews[modalClick].classList.add("active-modal"); // 모달창 보기위해 클릭한 모든 객체에 클래스네임 추가
+};
+
+modalBtns.forEach((mb, i) => {
+  mb.addEventListener("click", () => {
+    modal(i);
+  });
+});
 
 /* ===================== Mix it up Filter Portfolio ===================== */
 
