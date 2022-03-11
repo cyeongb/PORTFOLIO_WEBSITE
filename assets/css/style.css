@@ -570,6 +570,11 @@
          cursor: pointer;
      }
 
+     .services__modal-close:hover {
+         color: var(--text-color);
+         transition: 0.4s;
+     }
+
      /* ===================== SHOW MENU ===================== */
 
      /* ===================== ACTIVE LINK ===================== */
