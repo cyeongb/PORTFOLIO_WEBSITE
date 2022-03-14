@@ -42,8 +42,26 @@ modalClose.forEach((mc) => {
 });
 /* ===================== Mix it up Filter Portfolio ===================== */
 
+let mixerPortfolio = mixitup(".work__container", {
+  selectors: {
+    target: ".work__card",
+  },
+  animation: {
+    duration: 300,
+  },
+});
+
 /* link active  */
 
+const linkWork = document.querySelectorAll(".work__item");
+
+function activeWork() {
+  linkWork.forEach((link) => link.classList.remove("active-work"));
+  this.classList.add("active-work");
+  console.log("link-->", this.classList);
+}
+
+linkWork.forEach((link) => link.addEventListener("click", activeWork));
 /* ===================== Swiper Testimonial ===================== */
 
 /* ===================== Scroll Section Active Link ===================== */
