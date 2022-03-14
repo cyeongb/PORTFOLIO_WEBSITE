@@ -438,13 +438,13 @@
             <h2 class="section__title">My Portfolio</h2>
 
             <div class="work__filters">
-                <span class="work__item">All</span>
-                <span class="work__item">Web</span>
-                <span class="work__item">React</span>
-                <span class="work__item">Vue</span>
+                <span class="work__item active-work" data-filter="all">All</span>
+                <span class="work__item" data-filter=".web">Web</span>
+                <span class="work__item" data-filter=".react">React</span>
+                <span class="work__item" data-filter=".vue">Vue</span>
             </div>
             <div class="work__container container grid">
-                <div class="work__card">
+                <div class="work__card mix web">
                     <img src="assets/img/sample1.png" alt="" class="work__img" />
                     <h3 class="work__title">영화 사이트 프로젝트</h3>
                     <a href="#" class="work__button">바로가기
@@ -452,7 +452,7 @@
                     </a>
                 </div>
 
-                <div class="work__card">
+                <div class="work__card mix react">
                     <img src="assets/img/sample2.jpg" alt="" class="work__img" />
                     <h3 class="work__title">리액트 홈페이지 프로젝트</h3>
                     <a href="#" class="work__button">바로가기
@@ -460,7 +460,7 @@
                     </a>
                 </div>
 
-                <div class="work__card">
+                <div class="work__card mix react">
                     <img src="assets/img/sample3.jpg" alt="" class="work__img" />
                     <h3 class="work__title">투두 리스트 프로젝트</h3>
                     <a href="#" class="work__button">바로가기
@@ -468,7 +468,7 @@
                     </a>
                 </div>
 
-                <div class="work__card">
+                <div class="work__card mix vue">
                     <img src="" alt="" class="work__img" />
                     <h3 class="work__title">프로젝트</h3>
                     <a href="#" class="work__button">바로가기
@@ -498,9 +498,9 @@
 
     <script src=""></script>
 
-    <!-- ====================== MIX IT UP JS ====================== -->
+    <!-- ====================== MIXITUP JS ====================== -->
 
-    <script src=""></script>
+    <script src="assets/js/mixitup.min.js"></script>
 
 
     <!-- ====================== MAIN JS ====================== -->
