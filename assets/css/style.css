@@ -662,7 +662,12 @@
      .qna__name {
          font-size: var(--normal-font-size);
          font-weight: var(--font-medium);
+         color: var(--first-color);
          margin-bottom: 0.35rem;
+     }
+
+     .qna__description {
+         font-size: var(--small-font-size);
      }
 
      /* ===================== CONTACT ===================== */
