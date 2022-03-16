@@ -653,6 +653,18 @@
          margin-bottom: 3rem;
      }
 
+     .qna__img {
+         width: 65px;
+         border-radius: 2rem;
+         margin-bottom: 1rem;
+     }
+
+     .qna__name {
+         font-size: var(--normal-font-size);
+         font-weight: var(--font-medium);
+         margin-bottom: 0.35rem;
+     }
+
      /* ===================== CONTACT ===================== */
 
      /* ===================== FOOTER ===================== */
