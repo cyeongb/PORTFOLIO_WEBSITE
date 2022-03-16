@@ -62,6 +62,7 @@ function activeWork() {
 }
 
 linkWork.forEach((link) => link.addEventListener("click", activeWork));
+
 /* ===================== Swiper Testimonial ===================== */
 
 /* ===================== Scroll Section Active Link ===================== */
