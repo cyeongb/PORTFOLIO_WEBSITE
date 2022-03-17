@@ -670,6 +670,16 @@
          font-size: var(--small-font-size);
      }
 
+     /* Swiper */
+
+     .swiper-pagination-bullet {
+         background-color: var(--text-color-light);
+     }
+
+     .swiper-pagination-bullet-active {
+         background-color: var(--first-color);
+     }
+
      /* ===================== CONTACT ===================== */
 
      /* ===================== FOOTER ===================== */

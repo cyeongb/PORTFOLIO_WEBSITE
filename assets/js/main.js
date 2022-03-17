@@ -42,7 +42,7 @@ modalClose.forEach((mc) => {
 });
 /* ===================== Mix it up Filter Portfolio ===================== */
 
-let mixerPortfolio = mixitup(".work__container", {
+const mixerPortfolio = mixitup(".work__container", {
   selectors: {
     target: ".work__card",
   },
@@ -65,4 +65,26 @@ linkWork.forEach((link) => link.addEventListener("click", activeWork));
 
 /* ===================== Swiper Testimonial ===================== */
 
+const swiperQna = new Swiper(".qna__container", {
+  spaceBetween: 24,
+  loop: true,
+  grabCursor: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 48,
+    },
+  },
+});
 /* ===================== Scroll Section Active Link ===================== */
+
+/* ===================== LIGHT DARK THEME ===================== */
+
+/* ===================== Scroll Reveal Animation ===================== */
