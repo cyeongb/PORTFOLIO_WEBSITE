@@ -654,9 +654,9 @@
      }
 
      .qna__img {
-         width: 65px;
-         border-radius: 2rem;
-         margin-bottom: 1rem;
+         width: 55px;
+         border-radius: 2.5rem;
+         margin-bottom: 0.75rem;
      }
 
      .qna__name {
