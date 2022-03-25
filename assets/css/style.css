@@ -801,12 +801,18 @@
          margin-bottom: 2rem;
      }
 
+     .footer__link:hover {
+         color: var(--text-color);
+         transition: 0.4s;
+     }
+
      .footer__list {
          display: flex;
          justify-content: center;
          column-gap: 1.5rem;
          margin-bottom: 2rem;
      }
+
 
      .footer__social {
          display: flex;
