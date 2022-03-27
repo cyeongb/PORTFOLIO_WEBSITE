@@ -83,7 +83,36 @@ const swiperQna = new Swiper(".qna__container", {
     },
   },
 });
-/* ===================== Scroll Section Active Link ===================== */
+/* ===================== Scroll Sections Active Link ===================== */
+const sections = document.querySelectorAll("section[id]");
+// section의 id 속성을 sections에 담음
+
+function scrollActive() {
+  const scrollY = window.pageYOffset;
+
+  // console.log("sections>>", sections);
+
+  sections.forEach((current) => {
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 58;
+    const sectionId = current.getAttribute("id");
+
+    console.log("sectionId > ", sectionId);
+    console.log("sectionTop>", sectionTop);
+    if (scrollY >= sectionTop && scrollY <= sectionTop + sectionHeight) {
+      document
+        .querySelector(".nav__menu a[href*=" + sectionId + "]")
+        .classList.add("active-link");
+    } else {
+      document
+        .querySelector(".nav__menu a[href*=" + sectionId + "]")
+        .classList.remove("active-link");
+    }
+  });
+  console.log("scrollY>", scrollY);
+}
+
+window.addEventListener("scroll", scrollActive);
 
 /* ===================== LIGHT DARK THEME ===================== */
 
