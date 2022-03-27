@@ -836,6 +836,22 @@
          font-size: var(--smaller-font-size);
      }
 
+     /* ===================== SCROLL BAR ===================== */
+     ::-webkit-scrollbar {
+         width: 0.6rem;
+         border-radius: 0.5rem;
+         background-color: hsl(var(--second-hue), 8%, 38%);
+     }
+
+     ::-webkit-scrollbar-thumb {
+         background-color: hsl(var(--second-hue), 8%, 26%);
+         border-radius: 0.5rem;
+     }
+
+     ::-webkit-scrollbar-thumb:hover {
+         background-color: hsl(var(--second-hue), 8%, 20%);
+     }
+
      /* ===================== SHOW MENU ===================== */
 
      /* ===================== ACTIVE LINK ===================== */
