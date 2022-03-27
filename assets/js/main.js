@@ -97,8 +97,8 @@ function scrollActive() {
     const sectionTop = current.offsetTop - 58;
     const sectionId = current.getAttribute("id");
 
-    console.log("sectionId > ", sectionId);
-    console.log("sectionTop>", sectionTop);
+    // console.log("sectionId > ", sectionId);
+    // console.log("sectionTop>", sectionTop);
     if (scrollY >= sectionTop && scrollY <= sectionTop + sectionHeight) {
       document
         .querySelector(".nav__menu a[href*=" + sectionId + "]")
@@ -109,11 +109,44 @@ function scrollActive() {
         .classList.remove("active-link");
     }
   });
-  console.log("scrollY>", scrollY);
+  // console.log("scrollY>", scrollY);
 }
 
 window.addEventListener("scroll", scrollActive);
 
 /* ===================== LIGHT DARK THEME ===================== */
+
+const themeButton = document.getElementById("theme-button");
+const lightTheme = "light-theme";
+const iconTheme = "bx-sun";
+
+const selectedTheme = localStorage.getItem("selected-theme");
+const selectedIcon = localStorage.getItem("selected-icon");
+
+const getCurrentTheme = () =>
+  document.body.classList.contains(lightTheme) ? "dark" : "light";
+
+const getCurrentIcon = () =>
+  themeButton.classList.contains(iconTheme) ? "bx bx-moon" : "bx bx-sun";
+
+// selectedTheme 이 있을때 테마가 dark 이면 lightTheme 함수를 add 하라
+if (selectedTheme) {
+  document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
+    lightTheme
+  );
+  themeButton.classList[selectedIcon === "bx bx-moon" ? "add" : "remove"](
+    iconTheme
+  );
+}
+
+themeButton.addEventListener("click", () => {
+  console.log("selectedTheme>", selectedTheme);
+  console.log("iconTheme>", iconTheme);
+  document.body.classList.toggle(lightTheme);
+  themeButton.classList.toggle(iconTheme);
+
+  localStorage.setItem("selected-theme", getCurrentTheme());
+  localStorage.setItem("selected-icon", getCurrentIcon());
+});
 
 /* ===================== Scroll Reveal Animation ===================== */
