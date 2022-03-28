@@ -139,6 +139,7 @@ if (selectedTheme) {
   );
 }
 
+// theme버튼 클릭 시 컬러theme 바꾸고 아이콘 theme 바꿈(toggle)
 themeButton.addEventListener("click", () => {
   console.log("selectedTheme>", selectedTheme);
   console.log("iconTheme>", iconTheme);

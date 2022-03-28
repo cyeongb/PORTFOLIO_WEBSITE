@@ -141,6 +141,31 @@
          --container-color: #fff;
      }
 
+     .light-theme .scroll-header {
+         box-shadow: 0 2px 4px hsla(0, 0%, 1%, 0.1);
+     }
+
+     .light-theme .nav__menu {
+         background-color: hsla(var(--second-hue), 32%, 90%, 0.8);
+     }
+
+     .light-theme .section__subtitle {
+         color: var(--text-color);
+     }
+
+     .light-theme .home__social-link {
+         box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, 0.1);
+     }
+
+     .light-theme .home__social::after {
+         background-color: var(--text-color);
+     }
+
+     .light-theme .home__social-link,
+     .light-theme .home__scroll,
+     .light-theme .button {
+         color: var(--text-color);
+     }
 
      /* ===================== 재사용 CSS CLASS  ===================== */
 
