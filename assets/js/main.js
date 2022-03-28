@@ -151,3 +151,14 @@ themeButton.addEventListener("click", () => {
 });
 
 /* ===================== Scroll Reveal Animation ===================== */
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 2000,
+  delay: 400,
+  // reset: true,
+});
+
+sr.reveal(`.home__data`);
+sr.reveal(`.home__handle`, { delay: 600 });
+sr.reveal(`.home__social , .home__scroll`, { delay: 800, origin: "bottom" });
