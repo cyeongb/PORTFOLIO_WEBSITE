@@ -940,10 +940,10 @@
          visibility: visible;
      }
 
-     /* ===================== 브레이크포인트 ===================== */
+     /* ===================== Breakpoints ===================== */
 
      /* 모바일 (s) */
-     @media screen and (max-width:320px) {
+     @media screen and (max-width:380px) {
          .nav__menu {
              padding: 1rem 1.5rem;
          }
@@ -988,5 +988,68 @@
      }
 
      /* 테블릿 */
+     @media screen and (min-width:576px) {
+         .nav__menu {
+             width: 328px;
+             left: 0;
+             right: 0;
+             margin: 0 auto;
+         }
+
+         .about__info {
+             grid-template-columns: repeat(3, 150px);
+             justify-content: center;
+         }
+
+         .about__description {
+             padding: 0 5rem;
+         }
+
+         .skills__container {
+             justify-content: center;
+         }
+
+         .skills__content {
+             padding: 2rem 4rem;
+         }
+
+         .services__container {
+             grid-template-columns: repeat(2, 155px);
+             justify-content: center;
+         }
+
+         .services__modal-content {
+             width: 500px;
+             padding: 3rem 2rem;
+         }
+
+         .services__modal-description {
+             padding: 0 2rem;
+         }
+
+         .work__container {
+             justify-content: center;
+         }
+
+         .work__img {
+             width: 300px;
+         }
+
+         .contact__info {
+             grid-template-columns: repeat(2, 200px);
+             justify-content: center;
+         }
+
+         .contact__form {
+             width: 360px;
+             margin: 0 auto;
+         }
+
+         .contact__form .button {
+             display: flex;
+             margin: 0 auto;
+
+         }
+     }
 
      /* 데스크탑 */
