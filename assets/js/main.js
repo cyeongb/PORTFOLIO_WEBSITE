@@ -33,6 +33,7 @@ modalBtns.forEach((mb, i) => {
 });
 
 //모달창 닫기
+
 modalClose.forEach((mc) => {
   mc.addEventListener("click", () => {
     modalViews.forEach((mv) => {
