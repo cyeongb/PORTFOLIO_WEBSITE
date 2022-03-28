@@ -94,6 +94,8 @@
      body {
          background-color: var(--body-color);
          color: var(--text-color);
+         transition: 0.4s;
+         /* light - dark 테마 변경 시 animation효과 */
      }
 
      h1,
@@ -244,6 +246,8 @@
          width: 100%;
          background-color: var(--body-color);
          z-index: var(--z-fixed);
+         transition: 0.4s
+             /* 테마 변경시 animation 효과*/
      }
 
      .nav {
@@ -271,6 +275,8 @@
          border-radius: 5rem;
          padding: 1rem 2.25rem;
          backdrop-filter: blur(10px);
+         transition: 0.4s
+             /* 테마 변경시 animation 효과*/
      }
 
      .nav__list {
@@ -933,3 +939,54 @@
          opacity: 1;
          visibility: visible;
      }
+
+     /* ===================== 브레이크포인트 ===================== */
+
+     /* 모바일 (s) */
+     @media screen and (max-width:320px) {
+         .nav__menu {
+             padding: 1rem 1.5rem;
+         }
+
+         .home__buttons {
+             flex-direction: column;
+         }
+
+         .home__handle {
+             max-width: 180px;
+             max-height: 253px;
+         }
+
+         .home__img {
+             max-width: 180px;
+         }
+
+         .about__info {
+             grid-template-columns: repeat(1, 1fr);
+         }
+
+         .skills__box {
+             column-gap: 1rem;
+         }
+
+         .skills__name {
+             font-size: var(--small-font-size);
+         }
+
+         .services__container {
+             grid-template-columns: 145px;
+             justify-content: center;
+         }
+
+         .work__item {
+             font-size: var(--small-font-size);
+         }
+
+         .work__filters {
+             column-gap: 0.5rem;
+         }
+     }
+
+     /* 테블릿 */
+
+     /* 데스크탑 */
