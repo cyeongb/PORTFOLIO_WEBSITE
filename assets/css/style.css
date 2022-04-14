@@ -1037,7 +1037,8 @@
          }
 
          .contact__info {
-             grid-template-columns: repeat(2, 200px);
+             /* grid-template-columns: repeat(2, 200px); */
+             grid-template-columns: repeat(1, 1fr);
              justify-content: center;
          }
 
@@ -1086,7 +1087,7 @@
          }
 
          .contact__container {
-             grid-template-columns: repeat(2, 1fr);
+             /* grid-template-columns: repeat(2, 1fr); */
              justify-content: center;
              column-gap: 3rem;
          }
@@ -1097,6 +1098,11 @@
          .container {
              margin-left: auto;
              margin-right: auto;
+         }
+
+         .container__content {
+             width: 40rem;
+             grid-template-columns: repeat(1, 1fr)
          }
 
          .section {
